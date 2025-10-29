@@ -4,7 +4,7 @@ elemento.innerHTML = texto;
 }
 function exibirMensagemInicial() {
 exibirTextoNaTela('h1', 'Jogo do número secreto');
-exibirTextoNaTela('p', 'Tente advinhar o número entre 1 e 100!');
+exibirTextoNaTela('p', 'Tente advinhar o número entre 1 e 50!');
 }
 
 exibirMensagemInicial();
@@ -29,7 +29,7 @@ else {
 }
 
 function gerarNumeroSecreto() {
-    return Math.floor(Math.random() * 100) + 1;
+    return Math.floor(Math.random() * 50) + 1;
 }
 let numeroSecreto = gerarNumeroSecreto();
 let tentativas = 1;
